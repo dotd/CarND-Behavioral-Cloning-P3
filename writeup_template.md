@@ -1,4 +1,4 @@
-**Behavioral Cloning Project**
+*Behavioral Cloning Project**
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior - DONE!
@@ -6,7 +6,6 @@ The goals / steps of this project are the following:
 * Train and validate the model with a training and validation set - DONE!
 * Test that the model successfully drives around track one without leaving the road - DONE!
 * Summarize the results with a written report - DONE!
-
 
 [//]: # (Image References)
 
@@ -18,20 +17,17 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
-## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
+##Files Submitted & Code Quality
 
----
-###Files Submitted & Code Quality
-
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+###1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
-* model.py containing the script to create and train the model
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
-* 
+* model.py - containing the script to create and train the model
+* drive.py - for driving the car in autonomous mode
+* model.h5 - containing a trained convolution neural network 
+* writeup_report.md - summarizing the results
+* Main.ipynb - the main code
+* final_movie.mp4 - movie to demonstrate the results
 
 ####2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
