@@ -52,25 +52,23 @@ The model includes RELU layers to introduce nonlinearity and the data is normali
 #### Analysis and Process of Development
 I started with a much simpler networks. I've noticed in the test phase, as well in the simulator, that the driving of the car was too rough. Therefore, I've looked for a way to fit more accurately to the behavior that I want, in the cost at first of overfitting. I based the network part of it on the nVidia network (layers 1-3) and part on the classical LetNet (the rest of the network).  
 
-####2. Attempts to reduce overfitting in the model
+### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
+In order to cope with overfitting, I used both the left and right images that the simulator produced. Also, I generated myself the data and played in the simulator no standard behavior such as recovering from going off the road, as well providing much more than the default data provided. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+### 3. Model parameter tuning
 
-####3. Model parameter tuning
+The model used an adam optimizer, so the learning rate was not tuned manually. Actually, since the parameter space is quite big, I preffered not play with this part of the project. 
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+### 4. Appropriate training data
 
-####4. Appropriate training data
-
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road (as mentioned above).
 
 For details about how I created the training data, see the next section. 
 
-###Model Architecture and Training Strategy
+## Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to ...
 
@@ -86,7 +84,7 @@ The final step was to run the simulator to see how well the car was driving arou
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
-####2. Final Model Architecture
+### 2. Final Model Architecture
 
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
 
@@ -94,7 +92,7 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 ![alt text][image1]
 
-####3. Creation of the Training Set & Training Process
+### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
@@ -108,12 +106,11 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 Then I repeated this process on track two in order to get more data points.
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would increase the model learnability. For example, here is an image that has then been flipped:
 
 ![alt text][image6]
 ![alt text][image7]
 
-Etc ....
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
