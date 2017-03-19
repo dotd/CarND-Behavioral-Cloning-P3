@@ -11,10 +11,8 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/placeholder.png "Model Visualization"
 [image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/flip.png "flipped image"
+[image3]: ./examples/center_2017_03_19_14_51_40_374.jpg "Recovery Image"
+[image6]: ./examples/flip.png "Flipped image"
 
 ## Files Submitted & Code Quality
 
@@ -100,8 +98,6 @@ To capture good driving behavior, I first recorded two laps on track one using c
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to get into the middle of the lane. These images show what a recovery looks like starting from:
 
 ![alt text][image3]
-![alt text][image4]
-![alt text][image5]
 
 Then I repeated this process on track two in order to get more data points.
 
