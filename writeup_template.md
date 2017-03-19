@@ -14,8 +14,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
 [image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image6]: ./examples/flip.png "flipped image"
 
 ## Files Submitted & Code Quality
 
