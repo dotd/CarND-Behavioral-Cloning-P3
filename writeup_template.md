@@ -97,7 +97,7 @@ To capture good driving behavior, I first recorded two laps on track one using c
 
 ![alt text][image2]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to get into the middle of the lane. These images show what a recovery looks like starting from:
 
 ![alt text][image3]
 ![alt text][image4]
@@ -105,15 +105,12 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 Then I repeated this process on track two in order to get more data points.
 
-To augment the data sat, I also flipped images and angles thinking that this would increase the model learnability. For example, here is an image that has then been flipped:
+To augment the data set, I also flipped images and angles thinking that this would increase the model learnability. For example, here is an image that has then been flipped:
 
 ![alt text][image6]
-![alt text][image7]
-
 
 After the collection process, I had X number of data points. I then preprocessed this data by ...
 
+I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 3-4 as evidenced by the run result. I used an adam optimizer so that manually training the learning rate wasn't necessary.
