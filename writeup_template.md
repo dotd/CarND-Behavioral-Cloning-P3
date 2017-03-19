@@ -9,7 +9,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/center_2017_03_19_14_51_59_025.jpg "Model Visualization"
+[image1]: ./examples/code.png "Model Code"
+[image2]: ./examples/center_2017_03_19_14_51_59_025.jpg "Center of the Lane"
 [image3]: ./examples/center_2017_03_19_14_51_40_374.jpg "Recovery Image"
 [image6]: ./examples/flip.png "Flipped image"
 
