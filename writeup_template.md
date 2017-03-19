@@ -17,9 +17,9 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder_small.png "Normal Image"
 [image7]: ./examples/placeholder_small.png "Flipped Image"
 
-##Files Submitted & Code Quality
+## Files Submitted & Code Quality
 
-###1. Submission includes all required files and can be used to run the simulator in autonomous mode
+### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 * model.py - containing the script to create and train the model
@@ -29,23 +29,28 @@ My project includes the following files:
 * Main.ipynb - the main code
 * final_movie.mp4 - movie to demonstrate the results
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
 ```
 
-####3. Submission code is usable and readable
+#### 3. Submission code is usable and readable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+## Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+My model consists of 5 convolution neural network layers with 5x5 filter sizes and depths between 24, 36, 48, 15, and 8 (model.py lines 67-73). Between these layers 2 maxpooling standard layers are given.  
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+Afterward, all connected layers are introduced (output dimensions of 150, 100, 50, 1) to mildly reduce the dimension to a regression layer (lines 76-79). 
+
+The model includes RELU layers to introduce nonlinearity and the data is normalized in the model using a Keras lambda layer (code line 66). 
+
+#### Analysis and Process of Development
+I started with a much simpler networks. I've noticed in the test phase, as well in the simulator, that the driving of the car was too rough. Therefore, I've looked for a way to fit more accurately to the behavior that I want, in the cost at first of overfitting. I based the network part of it on the nVidia network (layers 1-3) and part on the classical LetNet (the rest of the network).  
 
 ####2. Attempts to reduce overfitting in the model
 
