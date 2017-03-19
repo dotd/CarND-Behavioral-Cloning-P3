@@ -9,8 +9,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
+[image1]: ./examples/center_2017_03_19_14_51_59_025.jpg "Model Visualization"
 [image3]: ./examples/center_2017_03_19_14_51_40_374.jpg "Recovery Image"
 [image6]: ./examples/flip.png "Flipped image"
 
